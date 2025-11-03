@@ -208,34 +208,35 @@
       );
 
       const Footer = () => (
-        <footer id="contact" className="bg-gray-800 text-gray-300 py-12 px-4">
-          <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            <div>
-              <h3 className="text-xl font-bold text-white mb-4">Sonipat Home Service</h3>
-                <h4 className="text-xl font-bold text-white mb-4">8816014071</h4>
-              <p className="text-sm">Your trusted partner for all home appliance repairs and services. Fast, reliable, and available 24x7.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-white mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#services-section" className="hover:text-primary transition-colors">Our Services</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-white mb-4">Connect With Us</h3>
-              <div className="flex justify-center md:justify-start space-x-4">
-                <a href="#" className="text-2xl hover:text-primary transition-colors"><i className="fab fa-facebook-f"></i></a>
-                <a href="#" className="text-2xl hover:text-primary transition-colors"><i className="fab fa-instagram"></i></a>
-                <a href="#" className="text-2xl hover:text-primary transition-colors"><i className="fab fa-twitter"></i></a>
-              </div>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
-            <p>&copy; {new Date().getFullYear()} Sonipat Home Service. All Rights Reserved.</p>
-          </div>
-        </footer>
+       <footer className={`${currentTheme.navBg} ${currentTheme.bodyText} py-12 px-4 md:px-8 text-center md:text-left`}>
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="md:col-span-1">
+                        <h3 className={`text-xl font-bold ${currentTheme.accentText} mb-2`}>Sonipat Home Service</h3>
+                        <p className="text-sm">Your trusted partner for all home appliance repairs and maintenance needs in Sonipat.</p>
+                    </div>
+                    <div className="md:col-span-2">
+                        <h4 className={`text-lg font-semibold ${currentTheme.accentText} mb-3`}>Contact Information</h4>
+                        <div className="space-y-2 text-sm">
+                            <p>
+                                <i className="fas fa-map-marker-alt w-5 mr-2 text-center"></i>
+                                <strong>Address:</strong> 128/1, Sainipura, Near Baba Dham Mandir, Sonipat
+                            </p>
+                            <p>
+                                <i className="fas fa-phone w-5 mr-2 text-center"></i>
+                                <strong>Contact:</strong> <a href="tel:8816014071" className="hover:underline">8816014071</a>
+                            </p>
+                            <p>
+                                <i className="fas fa-envelope w-5 mr-2 text-center"></i>
+                                <strong>Email:</strong> <a href="mailto:care@sonipathomeservice.com" className="hover:underline">care@sonipathomeservice.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className={`border-t ${currentTheme.navBorder} mt-8 pt-6 text-sm text-center ${currentTheme.navIcon}`}>
+                    &copy; {new Date().getFullYear()} Sonipat Home Service. All Rights Reserved.
+                </div>
+            </footer>
+
       );
 
       const NavItem = ({ href, icon, label }) => (
@@ -319,6 +320,7 @@
     </script>
 </body>
 </html>
+
 
 
 
