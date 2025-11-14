@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium Modular Kitchen Design in Sonipat - Sonipat Home Service. Expert kitchen designers serving Sonipat, Murthal, Bahalgarh, Kundli, Rai, Ganaur, Kharkhoda, Gohana, Mohana. Contact: 8816014071">
+  <meta name="keywords" content="modular kitchen design, kitchen renovation, Sonipat, Murthal, Bahalgarh, Kundli, home service, kitchen cabinets, interior design">
+  <meta name="author" content="Sonipat Home Service">
+  <meta property="og:title" content="Sonipat Home Service - Premium Modular Kitchen Design">
+  <meta property="og:description" content="Transform your kitchen with our premium modular designs. Serving Sonipat and surrounding areas.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Sonipat Home Service - Premium Modular Kitchen Design in Sonipat</title><!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23e67e22'/%3E%3Cpath d='M25 35h50v30H25z' fill='%23fff'/%3E%3Cpath d='M30 40h40v5H30zm0 10h40v5H30zm0 10h40v5H30z' fill='%23e67e22'/%3E%3C/svg%3E">
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #e67e22, #d35400);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f8f9fa" width="1200" height="600"/><rect fill="%23e9ecef" x="100" y="150" width="300" height="200" rx="10"/><rect fill="%23dee2e6" x="450" y="150" width="300" height="200" rx="10"/><rect fill="%23ced4da" x="800" y="150" width="300" height="200" rx="10"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: #e67e22;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 4rem 1rem;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(45deg, #e67e22, #f39c12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .gallery-info {
+            padding: 1.5rem;
+        }
+
+        .gallery-info h3 {
+            margin: 0 0 0.5rem 0;
+            color: #2c3e50;
+        }
+
+        .gallery-info p {
+            margin: 0;
+            color: #7f8c8d;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 4rem 1rem;
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            background: #e67e22;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+            background: #e67e22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .service-card:hover .service-icon {
+            background: white;
+            color: #e67e22;
+        }
+
+        /* Location Section */
+        .location-section {
+            padding: 4rem 1rem;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .location-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .location-item:hover {
+            background: rgba(230, 126, 34, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: #34495e;
+            color: white;
+            padding: 3rem 1rem 1rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #e67e22;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: #e67e22;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #e67e22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #d35400;
+        }
+
+        .app-stores {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .app-store-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #2c3e50;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            transition: background 0.3s ease;
+        }
+
+        .app-store-link:hover {
+            background: #e67e22;
+        }
+
+        .app-store-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .payment-method {
+            background: white;
+            color: #2c3e50;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #4a5f7a;
+            color: #bdc3c7;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                gap: 1rem;
+            }
+
+            .contact-item {
+                font-size: 0.8rem;
+            }
+
+            .footer {
+                display: none;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .location-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: 5% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            border-radius: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #e67e22;
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <header class="header">
+   <nav class="nav-container"><a href="https://www.sonipathomeservice.com" class="logo" target="_blank" rel="noopener noreferrer">
+     <div class="logo-icon">
+      <svg width="24" height="24" viewbox="0 0 24 24" fill="#e67e22"><path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" /> <path d="M8 11h8v2H8zm0 4h8v2H8z" fill="white" />
+      </svg>
+     </div><span id="company-name">Sonipat Home Service.Com</span> </a>
+    <div class="contact-info">
+     <div class="contact-item"><span>📞</span> <span id="contact-phone">8816014071</span>
+     </div>
+     <div class="contact-item"><span>✉️</span> <span id="contact-email">Care@Sonipathomeservice.Com</span>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <section class="hero">
+    <div class="hero-content">
+     <h1 id="main-heading">Premium Modular Kitchen Design in Sonipat</h1>
+     <p id="hero-description">Transform your kitchen with our premium modular designs. Expert craftsmanship, modern aesthetics, and functional solutions for your dream kitchen.</p><a href="tel:8816014071" class="cta-button">Get Free Consultation</a>
+    </div>
+   </section>
+   <section class="gallery-section">
+    <div class="container">
+     <h2 class="section-title">Our Kitchen Gallery</h2>
+     <div class="gallery-grid">
+      <div class="gallery-item" onclick="openModal('modal1')">
+       <div class="gallery-image">
+        <svg width="100" height="100" viewbox="0 0 200 150" fill="white"><rect x="20" y="30" width="160" height="90" rx="10" fill="rgba(255,255,255,0.2)" /> <rect x="30" y="40" width="30" height="70" fill="rgba(255,255,255,0.3)" /> <rect x="70" y="40" width="30" height="70" fill="rgba(255,255,255,0.3)" /> <rect x="110" y="40" width="30" height="70" fill="rgba(255,255,255,0.3)" /> <rect x="150" y="40" width="20" height="70" fill="rgba(255,255,255,0.3)" /> <text x="100" y="130" text-anchor="middle" fill="white" font-size="12">
+          Modern Kitchen
+         </text>
+        </svg>
+       </div>
+       <div class="gallery-info">
+        <h3>Modern L-Shaped Kitchen</h3>
+        <p>Contemporary design with premium finishes and smart storage solutions</p>
+       </div>
+      </div>
+      <div class="gallery-item" onclick="openModal('modal2')">
+       <div class="gallery-image">
+        <svg width="100" height="100" viewbox="0 0 200 150" fill="white"><rect x="10" y="20" width="180" height="100" rx="10" fill="rgba(255,255,255,0.2)" /> <rect x="20" y="30" width="25" height="80" fill="rgba(255,255,255,0.3)" /> <rect x="55" y="30" width="25" height="80" fill="rgba(255,255,255,0.3)" /> <rect x="90" y="30" width="25" height="80" fill="rgba(255,255,255,0.3)" /> <rect x="125" y="30" width="25" height="80" fill="rgba(255,255,255,0.3)" /> <rect x="160" y="30" width="20" height="80" fill="rgba(255,255,255,0.3)" /> <text x="100" y="140" text-anchor="middle" fill="white" font-size="12">
+          Island Kitchen
+         </text>
+        </svg>
+       </div>
+       <div class="gallery-info">
+        <h3>Island Kitchen Design</h3>
+        <p>Spacious island kitchen perfect for large families and entertaining</p>
+       </div>
+      </div>
+      <div class="gallery-item" onclick="openModal('modal3')">
+       <div class="gallery-image">
+        <svg width="100" height="100" viewbox="0 0 200 150" fill="white"><rect x="30" y="25" width="140" height="100" rx="10" fill="rgba(255,255,255,0.2)" /> <rect x="40" y="35" width="20" height="80" fill="rgba(255,255,255,0.3)" /> <rect x="70" y="35" width="20" height="80" fill="rgba(255,255,255,0.3)" /> <rect x="100" y="35" width="20" height="80" fill="rgba(255,255,255,0.3)" /> <rect x="130" y="35" width="20" height="80" fill="rgba(255,255,255,0.3)" /> <text x="100" y="140" text-anchor="middle" fill="white" font-size="12">
+          Parallel Kitchen
+         </text>
+        </svg>
+       </div>
+       <div class="gallery-info">
+        <h3>Parallel Kitchen Layout</h3>
+        <p>Efficient parallel design maximizing workflow and storage space</p>
+       </div>
+      </div>
+      <div class="gallery-item" onclick="openModal('modal4')">
+       <div class="gallery-image">
+        <svg width="100" height="100" viewbox="0 0 200 150" fill="white"><rect x="25" y="30" width="150" height="90" rx="10" fill="rgba(255,255,255,0.2)" /> <rect x="35" y="40" width="25" height="70" fill="rgba(255,255,255,0.3)" /> <rect x="70" y="40" width="25" height="70" fill="rgba(255,255,255,0.3)" /> <rect x="105" y="40" width="25" height="70" fill="rgba(255,255,255,0.3)" /> <rect x="140" y="40" width="25" height="70" fill="rgba(255,255,255,0.3)" /> <text x="100" y="135" text-anchor="middle" fill="white" font-size="12">
+          U-Shaped Kitchen
+         </text>
+        </svg>
+       </div>
+       <div class="gallery-info">
+        <h3>U-Shaped Kitchen</h3>
+        <p>Maximum storage and counter space with elegant U-shaped design</p>
+       </div>
+      </div>
+      <div class="gallery-item" onclick="openModal('modal5')">
+       <div class="gallery-image">
+        <svg width="100" height="100" viewbox="0 0 200 150" fill="white"><rect x="40" y="35" width="120" height="80" rx="10" fill="rgba(255,255,255,0.2)" /> <rect x="50" y="45" width="20" height="60" fill="rgba(255,255,255,0.3)" /> <rect x="80" y="45" width="20" height="60" fill="rgba(255,255,255,0.3)" /> <rect x="110" y="45" width="20" height="60" fill="rgba(255,255,255,0.3)" /> <rect x="140" y="45" width="10" height="60" fill="rgba(255,255,255,0.3)" /> <text x="100" y="130" text-anchor="middle" fill="white" font-size="12">
+          Straight Kitchen
+         </text>
+        </svg>
+       </div>
+       <div class="gallery-info">
+        <h3>Straight Kitchen Design</h3>
+        <p>Clean and simple straight-line kitchen perfect for compact spaces</p>
+       </div>
+      </div>
+      <div class="gallery-item" onclick="openModal('modal6')">
+       <div class="gallery-image">
+        <svg width="100" height="100" viewbox="0 0 200 150" fill="white"><rect x="20" y="25" width="160" height="100" rx="10" fill="rgba(255,255,255,0.2)" /> <rect x="30" y="35" width="30" height="80" fill="rgba(255,255,255,0.3)" /> <rect x="70" y="35" width="30" height="80" fill="rgba(255,255,255,0.3)" /> <rect x="110" y="35" width="30" height="80" fill="rgba(255,255,255,0.3)" /> <rect x="150" y="35" width="20" height="80" fill="rgba(255,255,255,0.3)" /> <text x="100" y="140" text-anchor="middle" fill="white" font-size="12">
+          Luxury Kitchen
+         </text>
+        </svg>
+       </div>
+       <div class="gallery-info">
+        <h3>Luxury Kitchen Collection</h3>
+        <p>Premium materials and finishes for the ultimate luxury kitchen experience</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="services-section">
+    <div class="container">
+     <h2 class="section-title" id="services-title">Our Services</h2>
+     <div class="services-grid">
+      <div class="service-card">
+       <div class="service-icon">
+        🏠
+       </div>
+       <h3>Kitchen Design</h3>
+       <p>Custom modular kitchen designs tailored to your space and needs</p>
+      </div>
+      <div class="service-card">
+       <div class="service-icon">
+        🔧
+       </div>
+       <h3>Installation</h3>
+       <p>Professional installation by certified technicians</p>
+      </div>
+      <div class="service-card">
+       <div class="service-icon">
+        📏
+       </div>
+       <h3>Measurement</h3>
+       <p>Accurate site measurement and 3D design visualization</p>
+      </div>
+      <div class="service-card">
+       <div class="service-icon">
+        🛠️
+       </div>
+       <h3>Maintenance</h3>
+       <p>Regular maintenance and repair services for your kitchen</p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="location-section">
+    <div class="container">
+     <h2 class="section-title">Service Locations</h2>
+     <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">We provide premium modular kitchen services across Sonipat and surrounding areas</p>
+     <div class="location-grid">
+      <div class="location-item">
+       Sonipat
+      </div>
+      <div class="location-item">
+       Murthal
+      </div>
+      <div class="location-item">
+       Bahalgarh
+      </div>
+      <div class="location-item">
+       Kundli
+      </div>
+      <div class="location-item">
+       Rai
+      </div>
+      <div class="location-item">
+       Ganaur
+      </div>
+      <div class="location-item">
+       Kharkhoda
+      </div>
+      <div class="location-item">
+       Gohana
+      </div>
+      <div class="location-item">
+       Mohana
+      </div>
+      <div class="location-item">
+       All Sectors
+      </div>
+      <div class="location-item">
+       All Societies
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="footer-content">
+    <div class="footer-section">
+     <h3>Sonipat Home Service.Com</h3>
+     <p id="footer-address">128/1, Sainipura, Sonipat</p>
+     <p>📞 8816014071</p>
+     <p>✉️ Care@Sonipathomeservice.Com</p>
+    </div>
+    <div class="footer-section">
+     <h3>Follow Us</h3>
+     <div class="social-links"><a href="https://facebook.com/Sonipathomeservice" target="_blank" rel="noopener noreferrer" class="social-link">📘</a> <a href="https://instagram.com/Sonipathomeservice" target="_blank" rel="noopener noreferrer" class="social-link">📷</a> <a href="https://twitter.com/Sonipathome" target="_blank" rel="noopener noreferrer" class="social-link">🐦</a> <a href="https://wa.me/918816014071" target="_blank" rel="noopener noreferrer" class="social-link">💬</a>
+     </div>
+    </div>
+    <div class="footer-section">
+     <h3>Download Our App</h3>
+     <div class="app-stores"><a href="https://play.google.com/store/apps/details?id=com.crapd.sonipathomeservice" target="_blank" rel="noopener noreferrer" class="app-store-link">
+       <svg class="app-store-icon" viewbox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+       </svg><span>Google Play</span> </a> <a href="https://www.indusappstore.com/apps/house-and-home/sonipat-home-service/com.crapd.sonipathomeservice/?page=details&amp;id=com.crapd.sonipathomeservice" target="_blank" rel="noopener noreferrer" class="app-store-link">
+       <svg class="app-store-icon" viewbox="0 0 24 24" fill="currentColor"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6Z" />
+       </svg><span>Indus App Store</span> </a>
+     </div>
+    </div>
+    <div class="footer-section">
+     <h3>Payment Methods</h3>
+     <div class="payment-methods"><span class="payment-method">💳 Cards</span> <span class="payment-method">🏦 Net Banking</span> <span class="payment-method">📱 UPI</span> <span class="payment-method">💰 Wallet</span>
+     </div>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>© 2024 Sonipat Home Service.Com. All rights reserved. | Premium Modular Kitchen Design Services</p>
+   </div>
+  </footer><!-- Modal for Gallery Images -->
+  <div id="imageModal" class="modal"><span class="close" onclick="closeModal()">×</span>
+   <div class="modal-content" id="modalImage">
+    <div style="background: linear-gradient(45deg, #e67e22, #f39c12); padding: 3rem; text-align: center; color: white; border-radius: 10px;">
+     <h2 id="modalTitle">Kitchen Design</h2>
+     <p id="modalDescription">Premium modular kitchen design with modern aesthetics and functional solutions.</p>
+     <div style="margin-top: 2rem;">
+      <svg width="200" height="150" viewbox="0 0 400 300" fill="white"><rect x="50" y="50" width="300" height="200" rx="20" fill="rgba(255,255,255,0.2)" /> <rect x="70" y="70" width="50" height="160" fill="rgba(255,255,255,0.3)" /> <rect x="140" y="70" width="50" height="160" fill="rgba(255,255,255,0.3)" /> <rect x="210" y="70" width="50" height="160" fill="rgba(255,255,255,0.3)" /> <rect x="280" y="70" width="50" height="160" fill="rgba(255,255,255,0.3)" /> <text x="200" y="270" text-anchor="middle" fill="white" font-size="16">
+        Premium Kitchen Design
+       </text>
+      </svg>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+        // Default configuration
+        const defaultConfig = {
+            company_name: "Sonipat Home Service.Com",
+            main_heading: "Premium Modular Kitchen Design in Sonipat",
+            hero_description: "Transform your kitchen with our premium modular designs. Expert craftsmanship, modern aesthetics, and functional solutions for your dream kitchen.",
+            services_title: "Our Services",
+            contact_phone: "8816014071",
+            contact_email: "Care@Sonipathomeservice.Com",
+            footer_address: "128/1, Sainipura, Sonipat"
+        };
+
+        // Gallery modal functionality
+        function openModal(modalId) {
+            const modal = document.getElementById('imageModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDescription = document.getElementById('modalDescription');
+            
+            const titles = {
+                'modal1': 'Modern L-Shaped Kitchen',
+                'modal2': 'Island Kitchen Design',
+                'modal3': 'Parallel Kitchen Layout',
+                'modal4': 'U-Shaped Kitchen',
+                'modal5': 'Straight Kitchen Design',
+                'modal6': 'Luxury Kitchen Collection'
+            };
+            
+            const descriptions = {
+                'modal1': 'Contemporary L-shaped design with premium finishes, smart storage solutions, and modern appliances integration.',
+                'modal2': 'Spacious island kitchen perfect for large families and entertaining, featuring ample counter space and storage.',
+                'modal3': 'Efficient parallel design maximizing workflow and storage space, ideal for narrow kitchen areas.',
+                'modal4': 'Maximum storage and counter space with elegant U-shaped design, perfect for cooking enthusiasts.',
+                'modal5': 'Clean and simple straight-line kitchen perfect for compact spaces without compromising on functionality.',
+                'modal6': 'Premium materials and finishes for the ultimate luxury kitchen experience with high-end appliances.'
+            };
+            
+            modalTitle.textContent = titles[modalId] || 'Kitchen Design';
+            modalDescription.textContent = descriptions[modalId] || 'Premium modular kitchen design.';
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Element SDK implementation
+        async function onConfigChange(config) {
+            // Update text content based on config
+            const companyNameEl = document.getElementById('company-name');
+            if (companyNameEl) companyNameEl.textContent = config.company_name || defaultConfig.company_name;
+            
+            const mainHeadingEl = document.getElementById('main-heading');
+            if (mainHeadingEl) mainHeadingEl.textContent = config.main_heading || defaultConfig.main_heading;
+            
+            const heroDescEl = document.getElementById('hero-description');
+            if (heroDescEl) heroDescEl.textContent = config.hero_description || defaultConfig.hero_description;
+            
+            const servicesTitleEl = document.getElementById('services-title');
+            if (servicesTitleEl) servicesTitleEl.textContent = config.services_title || defaultConfig.services_title;
+            
+            const contactPhoneEl = document.getElementById('contact-phone');
+            if (contactPhoneEl) contactPhoneEl.textContent = config.contact_phone || defaultConfig.contact_phone;
+            
+            const contactEmailEl = document.getElementById('contact-email');
+            if (contactEmailEl) contactEmailEl.textContent = config.contact_email || defaultConfig.contact_email;
+            
+            const footerAddressEl = document.getElementById('footer-address');
+            if (footerAddressEl) footerAddressEl.textContent = config.footer_address || defaultConfig.footer_address;
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["company_name", config.company_name || defaultConfig.company_name],
+                ["main_heading", config.main_heading || defaultConfig.main_heading],
+                ["hero_description", config.hero_description || defaultConfig.hero_description],
+                ["services_title", config.services_title || defaultConfig.services_title],
+                ["contact_phone", config.contact_phone || defaultConfig.contact_phone],
+                ["contact_email", config.contact_email || defaultConfig.contact_email],
+                ["footer_address", config.footer_address || defaultConfig.footer_address]
+            ]);
+        }
+
+        // Initialize Element SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+
+        // Smooth scrolling for internal links
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling behavior
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99e2ed32207a54ae',t:'MTc2MzA4NTc0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
